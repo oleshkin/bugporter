@@ -3,12 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A21FDD6B-6251-4572-9568-35431CDC344E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bugporter.API", "Bugporter.API\Bugporter.API.csproj", "{A522BD5C-75EB-4A30-98B6-D21C891DFA53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A522BD5C-75EB-4A30-98B6-D21C891DFA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A522BD5C-75EB-4A30-98B6-D21C891DFA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A522BD5C-75EB-4A30-98B6-D21C891DFA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A522BD5C-75EB-4A30-98B6-D21C891DFA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C27259F2-8559-431E-ACCA-0CF1AC03ED24}
 	EndGlobalSection
 EndGlobal
