@@ -16,11 +16,7 @@ namespace Bugporter.API
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-        }
-
-        public void Run()
-        {
-            _logger.LogInformation("Hello world11");
+            builder.Services.AddSingleton<CreateGitHubIssueCommand>();
         }
 
     }
