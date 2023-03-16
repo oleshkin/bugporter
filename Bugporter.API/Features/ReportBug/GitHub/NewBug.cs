@@ -8,12 +8,12 @@ namespace Bugporter.API.Features.ReportBug.GitHub
 {
     public class NewBug
     {
-        public string BugSummary { get; }
+        public string Summary { get; }
         public string Description { get; }
 
-        public NewBug(string bugSummary, string description)
+        public NewBug(string summary, string description)
         {
-            BugSummary = bugSummary;
+            Summary = summary;
             Description = description;
         }
     }

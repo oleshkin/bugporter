@@ -23,7 +23,7 @@ namespace Bugporter.API.Features.ReportBug.GitHub
             var stopwatch = Stopwatch.StartNew(); // allocated on the heap :(
 
             // create GitHub issue
-            ReportedBug reportedBug = new("1", "Test bug", "dummy bug description");
+            ReportedBug reportedBug = new("1", newBug.Summary, newBug.Description);
 
 
             stopwatch.Stop();
