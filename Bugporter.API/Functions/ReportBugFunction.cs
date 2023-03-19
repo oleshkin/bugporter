@@ -36,7 +36,7 @@ namespace Bugporter.API.Functions
 
         [FunctionName("ReportBugFunction")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "bugs")] ReportBugRequest request,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "bugs")] ReportBugRequest request,
             HttpRequest httpRequest)
         {
             AuthenticateResult authenticationResult = await _authenticationHandler.HandleAuthenticateAsync(httpRequest);
